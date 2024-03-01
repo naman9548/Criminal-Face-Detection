@@ -9,7 +9,7 @@ from geopy.geocoders import Nominatim
 
 mail = smtplib.SMTP('smtp.gmail.com', 587)
 mail.starttls()
-mail.login('bent8401@gmail.com', 'enyoirulsqgpmumv')
+mail.login('sendermail@gmail.com', 'xxxxxxxxxxxxxx')
 SUBJECT='CRIMINAL DETECTION ALERT'
 TEXT = 'Person matched in CCTV is '
 loc= Nominatim(user_agent="GetLoc")
@@ -84,7 +84,7 @@ while True:
             TEXT= TEXT + ' '.join(face_name)+ '\nLocation: ' + (locname.address)
             message = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
             if ' '.join(face_name)!="Unknown":
-                mail.sendmail('bent8401@gmail.com', 'shooternamandeol@gmail.com', message)
+                mail.sendmail('sendermail@gmail.com', 'receivermail@gmail.com', message)
             temp_face_name=face_name
     cv2.imshow("Frame",frame)
     cv2.waitKey(1)
