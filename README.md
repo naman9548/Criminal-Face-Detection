@@ -40,8 +40,19 @@ This project implements a simple facial recognition system using the `face_recog
 
 ## Setup
 ### Installation
-1. Clone the repository: `git clone <repository_url>`.
-2. Install dependencies: `pip install -r requirements.txt`.
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/naman9548/Criminal-Face-Detection
+    cd Criminal-Face-Detection
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ### Configuration
 - Add encoding images of known faces to the `images/` directory.
